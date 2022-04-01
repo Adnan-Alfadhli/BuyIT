@@ -17,7 +17,8 @@ class AppManger: ObservableObject{
         title = ""
         tasks = []
     }
-    func changeDoneOfTask(index: Int){
-        tasks[index].isDone.toggle()
+    func changeDoneOfTask(index: SavingRow){
+//        index.isDone.toggle()
+        
     }
 }

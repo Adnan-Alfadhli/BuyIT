@@ -51,8 +51,7 @@ struct RowView: View{
                 .font(.body)
         }
         .onTapGesture {
-            
-            //            appManger.changeDoneOfTask(index: )
+            appManger.changeDoneOfTask(index: 0)
         }
     }
 }
@@ -61,3 +60,4 @@ struct HomeView_Previews: PreviewProvider {
         HomeView(appManger: AppManger())
     }
 }
+
