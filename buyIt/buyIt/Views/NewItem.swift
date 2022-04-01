@@ -8,13 +8,31 @@
 import SwiftUI
 
 struct NewItem: View {
+    @State var des: String = ""
+    @State var isOn: Bool = false
+    @ObservedObject var appManger : AppManger
     var body: some View {
-        Text("New Item View")
+        VStack(alignment: .leading){
+            Text("Description")
+            TextField("Enter Task description", text: $des)
+                .textFieldStyle(.roundedBorder)
+            HStack{
+                Text("is done ?")
+                Toggle("", isOn: $isOn)
+            }
+            
+            Button {
+                appManger.tasks.append(SavingRow(isDone: isOn, description: des))
+            } label: {
+                Text("Add Task")
+            }
+
+        }.padding()
     }
 }
 
 struct NewItem_Previews: PreviewProvider {
     static var previews: some View {
-        NewItem()
+        NewItem(appManger: AppManger())
     }
 }

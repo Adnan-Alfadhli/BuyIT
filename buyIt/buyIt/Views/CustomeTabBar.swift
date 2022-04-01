@@ -15,7 +15,7 @@ struct CustomeTabBar: View {
                 TabViewStyle(iconName: "house", tabName: "Home")
                 
             }.tag(1)
-            NewItem().tabItem {
+            NewItem(appManger: appManger).tabItem {
                 TabViewStyle(iconName: "plus", tabName: "")
                 
             }.tag(2)

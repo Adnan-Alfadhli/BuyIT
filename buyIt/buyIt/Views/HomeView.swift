@@ -10,23 +10,35 @@ import SwiftUI
 struct HomeView: View {
     @ObservedObject var appManger : AppManger
     var body: some View {
-        VStack{
+        VStack(alignment: .leading){
+            
             Image("header")
                 .resizable()
                 .scaledToFit()
                 .ignoresSafeArea()
-            Text("Title")
-            ScrollView{
-                ForEach(appManger.tasks){ task in
-                    RowView(task: task)
+            Group{
+                Text("Title")
+                    .font(.title)
+                ScrollView{
+                    VStack(alignment: .leading) {
+                        ForEach(appManger.tasks){ task in
+                            
+                            RowView(task: task, appManger: appManger)
+                        }
+                        
+                    }
+                    
+                    
+                    
                 }
-                
-            }
+            }.padding(.horizontal)
         }
+        
     }
 }
 struct RowView: View{
     var task: SavingRow
+    @ObservedObject var appManger : AppManger
     var body: some View{
         HStack{
             if task.isDone{
@@ -36,6 +48,11 @@ struct RowView: View{
             }
             
             Text(task.description)
+                .font(.body)
+        }
+        .onTapGesture {
+            
+            //            appManger.changeDoneOfTask(index: )
         }
     }
 }
