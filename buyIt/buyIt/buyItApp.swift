@@ -11,7 +11,7 @@ import SwiftUI
 struct buyItApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CustomeTabBar()
         }
     }
 }
