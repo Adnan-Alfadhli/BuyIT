@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct CustomeTabBar: View {
+    @ObservedObject var appManger : AppManger
     var body: some View {
         TabView() {
-            HomeView().tabItem {
+            HomeView(appManger: appManger).tabItem {
                 TabViewStyle(iconName: "house", tabName: "Home")
                 
             }.tag(1)
@@ -39,6 +40,6 @@ struct TabViewStyle: View{
 
 struct CustomeTabBar_Previews: PreviewProvider {
     static var previews: some View {
-        CustomeTabBar()
+        CustomeTabBar(appManger: AppManger())
     }
 }

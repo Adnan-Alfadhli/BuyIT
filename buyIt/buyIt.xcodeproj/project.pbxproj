@@ -14,6 +14,8 @@
 		848E23BE27F76C58007CD5F5 /* NewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848E23BD27F76C58007CD5F5 /* NewItem.swift */; };
 		848E23C027F76C65007CD5F5 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848E23BF27F76C65007CD5F5 /* Settings.swift */; };
 		848E23C427F76CBE007CD5F5 /* CustomeTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848E23C327F76CBE007CD5F5 /* CustomeTabBar.swift */; };
+		848E23C627F76FC9007CD5F5 /* AppManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848E23C527F76FC9007CD5F5 /* AppManger.swift */; };
+		848E23C827F7706A007CD5F5 /* SavingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848E23C727F7706A007CD5F5 /* SavingRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		848E23BD27F76C58007CD5F5 /* NewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItem.swift; sourceTree = "<group>"; };
 		848E23BF27F76C65007CD5F5 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		848E23C327F76CBE007CD5F5 /* CustomeTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomeTabBar.swift; sourceTree = "<group>"; };
+		848E23C527F76FC9007CD5F5 /* AppManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManger.swift; sourceTree = "<group>"; };
+		848E23C727F7706A007CD5F5 /* SavingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,7 @@
 		848E23B927F76BF1007CD5F5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				848E23C727F7706A007CD5F5 /* SavingRow.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -96,6 +101,7 @@
 		848E23BA27F76BFD007CD5F5 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				848E23C527F76FC9007CD5F5 /* AppManger.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -173,6 +179,8 @@
 				848E23AB27F76527007CD5F5 /* buyItApp.swift in Sources */,
 				848E23C427F76CBE007CD5F5 /* CustomeTabBar.swift in Sources */,
 				848E23BC27F76C33007CD5F5 /* HomeView.swift in Sources */,
+				848E23C827F7706A007CD5F5 /* SavingRow.swift in Sources */,
+				848E23C627F76FC9007CD5F5 /* AppManger.swift in Sources */,
 				848E23C027F76C65007CD5F5 /* Settings.swift in Sources */,
 				848E23BE27F76C58007CD5F5 /* NewItem.swift in Sources */,
 			);

@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "6th-Gen-Camaro-SS-_Zl1-1LE-Bumper_-Front-Splitter-2.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

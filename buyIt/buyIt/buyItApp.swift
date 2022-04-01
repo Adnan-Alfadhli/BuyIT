@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct buyItApp: App {
+    
     var body: some Scene {
         WindowGroup {
-            CustomeTabBar()
+            CustomeTabBar(appManger: AppManger())
         }
     }
 }
